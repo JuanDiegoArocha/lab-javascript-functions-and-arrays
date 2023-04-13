@@ -120,15 +120,51 @@ const wordsUnique = [
   'simple',
   'bring'
 ];
+/*
+function uniquifyArray(words) {
+  if(uniquifyArray === 0) {
+    return null;
+  }
+  const uniquifyArray = [];
+  for (let i = 0; i < words.length; i++) {
+    if (!uniquifyArray.includes(words[i])) {
+      uniquifyArray.push(words[i]);
+    }
+  }
+  return uniquifyArray;
+} */
 
-function uniquifyArray() {}
+function uniquifyArray(words) {
+
+  if (uniquifyArray === 0){
+    return null;
+  }
+  const uniquifyArray = [];
+  for (let i = 0; i < words.length; i++) {
+    if (uniquifyArray.indexOf(words[i]) === -1) {
+      uniquifyArray.push(words[i]);
+    }
+  }
+  return uniquifyArray;
+}
 
 
 
 // Iteration #6: Find elements
 const wordsFind = ['machine', 'subset', 'trouble', 'starting', 'matter', 'eating', 'truth', 'disobedience'];
 
-function doesWordExist() {}
+function doesWordExist(words, word) {
+  if (words, word === 0) {
+    return null;
+  }
+
+  for (let i = 0; i < words.length; i++) {
+    if (words[i] === word) {
+      return true;
+    }
+  }
+  return false;
+}
 
 
 
